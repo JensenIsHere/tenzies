@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #0b2434;
+}
+
+.app {
+  width: 320px;
+  height: 540px;
+  background-color: #f5f5f5;
+  margin: 25px;
+  border-radius: 10px;
+}
+
+.header {
+  width: 250px;
+  margin: 31px 35px 18px;
+}
+
+.header--title {
+  padding: 31px 0 8px;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #2b283a;
+}
+
+.header--instructions {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 13.1072px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #4a4e74;
+}
+
+.game {
+  width: 250px;
+  margin: 0 35px 36px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 120px 45px;
+}
+
+.game--timer {
+  grid-area: 1 / 1 / 2 / 2;
+  margin-bottom: 18px;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: -0.03em;
+  color: #2b283a;
+}
+
+#under60sec {
+  width: 60px;
+}
+
+#over60sec {
+  width: 80px;
+}
+
+.game--die_area {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.die {
+  width: 36px;
+  height: 36px;
+  margin: 9px 7px;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.die--number {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.5889px;
+  line-height: 24px;
+  color: #2b283a;
+}
+
+.selected {
+  background: #59e391;
+}
+
+button {
+  width: 92px;
+  height: 36px;
+  background: #5035ff;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  border: 0;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.game--button_roll {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.records {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  margin: 0 30px;
+}
+
+.records--left {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 90px;
+}
+
+.records--title {
+  grid-area: 1 / 1 / 2 / 2;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.records--button_reset {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.records--right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 116px;
+  height: 116px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: #4a4e74;
+}
+
+.records--places {
+  margin-left: 15px;
+}
+
+.records--place_1st,
+.records--time_1st {
+  color: #b7bb00;
+}
+
+.records--place_2nd,
+.records--time_2nd {
+  color: #828282;
+}
+
+.records--place_3rd,
+.records--time_3rd {
+  color: #a96c25;
+}
+
+.records--times {
+  margin-right: 15px;
+  text-align: right;
+}
